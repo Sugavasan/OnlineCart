@@ -8,13 +8,25 @@
     color:white;
     cursor: pointer;
 }
-#nav{
-   position: fixed;
-   left:1230px;
-    z-index:3;
-    border:2px solid white;
+#nav {
+    position: fixed;
+    left:91%; /* Initially centered horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 3;
+    border: 2px solid white;
     border-radius: 10px;
-}
+    height:70px;
+ }
+ 
+ @media (max-width: 768px) {
+    /* CSS rules for screens with a maximum width of 768px (small screens) */
+    #nav {
+       left:75%; /* Move to the left side */
+       transform: none; /* Reset the transform */
+       
+    }
+ }
+ 
 #space{
     padding:5px;
     justify-content: flex-end;
@@ -26,4 +38,5 @@ span.error {
     color: red;
   }
 
+  
 
