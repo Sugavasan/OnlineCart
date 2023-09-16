@@ -1,298 +1,306 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/c61eb31f26.js"></script> 
-<link rel="stylesheet" href="cartcss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online products.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/c61eb31f26.js"></script> 
+  <link rel="stylesheet" href="cartcss.css">
 </head>
-<body>
-  <header>
+<body id="body">
+    <header>
  
-    <div class="d-flex" id="space">
-      <a class="navbar-brand me-auto" style="color:white" id="homepage"><b>Buyer Zone</b></a>
-      <a class="nav-link active" aria-current="page" style="color: white;" href="#"><b>Home</b></a>
-      <h5><button type="button"  class="btn btn-outline-success-rounded" style="color: white;" data-bs-toggle="modal" data-bs-target="#signfirst" data-bs-whatever="@user">
-        <b>Register</b></button>         
-      <div class="modal fade" id="signfirst" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Register</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-               <!-- Register Form -->
-  <form id="registerForm">
-    <div class="mb-3">
-      <label for="registerName" class="form-label">Name</label>
-      <input type="text" class="form-control" id="registerName" name="name">
-      <span id="registerError1" class="error"></span>
-    </div>
-    <div class="mb-3">
-      <label for="registerEmail" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="registerEmail" name="email" aria-describedby="emailHelp">
-      <span id="registerError2" class="error"></span>
-    </div>
-    <div class="mb-3">
-      <label for="registerPassword">Password</label>
-      <input type="password" class="form-control" id="registerPassword" name="password">
-      <span id="registerError3" class="error"></span>
-    </div>
-    <div class="mb-3">
-      <label for="registerPassword2">Re-Password</label>
-      <input type="password" class="form-control" id="registerPassword2" name="cpassword">
-      <span id="registerError4" class="error"></span>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      <button class="btn btn-primary" id="registerSubmit">Submit</button>
-    </div>
-  </form>
-               
-          </div>
-        </div>
-      </div>
-      </div></h5>
-      <h5 style="color:black">
-        <button type="button" class="btn btn-outline-success-rounded" style="color: white;" data-bs-toggle="modal" data-bs-target="#loginfirst" data-bs-whatever="@user">
-        <b>Login</b></button>         
-      <div class="modal fade" id="loginfirst" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Login</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form id="loginForm">
-                <div class="mb-3">
-                  <label for="loginName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="loginName" name="name">
-                  <span id="loginError1" class="error"></span>
+        <div class="d-flex" id="space">
+          <a class="navbar-brand me-auto" style="color:white" id="homepage"><b>Buyer Zone</b></a>
+          <a class="nav-link active" aria-current="page" style="color: white;" href="#"><b>Home</b></a>
+          <h5><button type="button"  class="btn btn-outline-success-rounded" style="color: white;" data-bs-toggle="modal" data-bs-target="#signfirst" data-bs-whatever="@user">
+            <b>Register</b></button>         
+          <div class="modal fade" id="signfirst" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="mb-3">
-                  <label for="loginEmail" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="loginEmail" name="email" aria-describedby="emailHelp">
-                  <span id="loginError2" class="error"></span>
-                </div>
-                <div class="mb-3">
-                  <label for="loginPassword">Password</label>
-                  <input type="password" class="form-control" id="loginPassword" name="password">
-                  <span id="loginError3" class="error"></span>
-                </div>
-                <div class="modal-footer">
-                  <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button class="btn btn-primary" id="loginSubmit">Submit</button>
-                </div>
-              </form>
-          </div>
+                <div class="modal-body">
+                   <!-- Register Form -->
+      <form id="registerForm">
+        <div class="mb-3">
+          <label for="registerName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="registerName" name="name">
+          <span id="registerError1" class="error"></span>
         </div>
-      </div>
-      </div></h5> 
-    </div>
-
-  <nav class="navbar navbar-dark bg-dark" id="nav">
-      <div class="container-fluid">
-         <p id="total-quantity" class="ms-auto"style="color: red;z-index: 5;">0+</p>
-        <a class="navbar-brand" href="#"> 
-          <i class="fa fa-shopping-cart"></i></a>
+        <div class="mb-3">
+          <label for="registerEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="registerEmail" name="email" aria-describedby="emailHelp">
+          <span id="registerError2" class="error"></span>
         </div>
-      </div>
-    
-  </nav>
-  </header>
-  <br>
-  <div class="container-fluid">
-  <div class="row row-cols-1 row-cols-md-3 g-4" style="margin:0%">
-    <div class="col">
-      <div class="card w-75">
-        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" style="height:180px;"   class="card-img-top" alt="Please refresh your page again.">
-        <div class="card-body">
-          <h5 class="card-title">Headphone</h5>
-          <p class="price">Price: 500</p>
-          <p class="quantity">Quantity: 0</p>
-          <button class="btn btn-primary" onclick="check(0)">Add to cart</button>
-          <button class="btn btn-primary"  id="buy0" onclick="decrease(0)">Remove item</button>
+        <div class="mb-3">
+          <label for="registerPassword">Password</label>
+          <input type="password" class="form-control" id="registerPassword" name="password">
+          <span id="registerError3" class="error"></span>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card w-75">
-        <img src="https://www.oberlo.com/media/1603969900-productphotog-2.jpg?w=1824&fit=max"  style="height:180px;"  class="card-img-top" alt="please refresh the page again.">
-        <div class="card-body">
-          <h5 class="card-title">camera</h5>
-          <p class="price">Price: 980</p>
-          <p class="quantity">Quantity: 0</p>
-          <button class="btn btn-primary" onclick="check(1)">Add to cart</button>
-          <button class="btn btn-primary" id="buy1" onclick="decrease(1)">Remove item</button>
+        <div class="mb-3">
+          <label for="registerPassword2">Re-Password</label>
+          <input type="password" class="form-control" id="registerPassword2" name="cpassword">
+          <span id="registerError4" class="error"></span>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card w-75">
-        <img src="https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?cs=srgb&dl=pexels-alex-azabache-3766111.jpg&fm=jpg" style="height:180px;"      class="card-img-top" alt="please refresh the page again.">
-        <div class="card-body">
-          <h5 class="card-title">Watch</h5>
-          <p class="price">Price:670</p>
-          <p class="quantity">Quantity: 0</p>
-          <button class="btn btn-primary" onclick="check(2)">Add to cart</button>
-        
-          <button class="btn btn-primary" id="buy2" onclick="decrease(2)">Remove item</button>
-      </div>
-    </div>
-    
-  </div>
-<!--second row start-->
-    <div class="col">
-      <div class="card w-75">
-        <img src="https://rukminim1.flixcart.com/image/300/300/kpr8k280/all-purpose-cleaner/9/g/n/hello-sunshine-multipurpose-sanitizing-spray-200ml-pack-of-2-original-imag3x4uzvf44ptu.jpeg" style="height:180px;"    class="card-img-top" alt="please refresh the page again.">
-        <div class="card-body">
-          <h5 class="card-title">Sanitizer</h5>
-          <p class="price">Price:710</p>
-          <p class="quantity">Quantity: 0</p>
-          <button class="btn btn-primary" onclick="check(3)">Add to cart</button>
-          <button class="btn btn-primary"  id="buy3" onclick="decrease(3)">Remove item</button>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-primary" id="registerSubmit">Submit</button>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card w-75">
-        <img src="https://m.media-amazon.com/images/I/61+85l5NkML._AC_UF1000,1000_QL80_.jpg" style="height:180px;"   class="card-img-top" alt="please refresh the page again.">
-        <div class="card-body">
-          <h5 class="card-title">Phone case</h5>
-          <p class="price">Price:650</p>
-          <p class="quantity">Quantity: 0</p>
-          <button class="btn btn-primary" onclick="check(4)">Add to cart</button>
-          <button class="btn btn-primary" id="buy4" onclick="decrease(4)">Remove item</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card w-75">
-        <img src="https://m.media-amazon.com/images/I/516EswKjjRL.jpg" style="height:180px;"    class="card-img-top" alt="Please refresh the page again.">
-        <div class="card-body">
-          <h5 class="card-title">Baby powder</h5>
-          <p class="price">Price:550</p>
-          <p class="quantity">Quantity: 0</p>
-          <button class="btn btn-primary" onclick="check(5)">Add to cart</button>
-        
-          <button class="btn btn-primary" id="buy5" onclick="decrease(5)">Remove item</button>
-      </div>
-    </div>
-    
-  </div>
-<!--second row end-->
-<!--third row products-->
-
-  <div class="col">
-    <div class="card w-75">
-      <img src="https://www.bazaart.me/wp-content/uploads/2021/05/create_product_photos_with_white_background_Thumbnail_website_compressed.jpg" style="height:180px;"    class="card-img-top" alt="please refresh the page again.">
-      <div class="card-body">
-        <h5 class="card-title">Bag</h5>
-        <p class="price">Price:450</p>
-        <p class="quantity">Quantity: 0</p>
-        <button class="btn btn-primary" onclick="check(6)">Add to cart</button>
-        <button class="btn btn-primary"  id="buy6" onclick="decrease(6)">Remove item</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card w-75">
-      <img src="https://southindianstore.com/wp-content/uploads/2020/02/07.jpg" style="height:180px;"  class="card-img-top" alt="please refresh the page again.">
-      <div class="card-body">
-        <h5 class="card-title">Oil</h5>
-        <p class="price">Price: 300</p>
-        <p class="quantity">Quantity: 0</p>
-        <button class="btn btn-primary" onclick="check(7)">Add to cart</button>
-        <button class="btn btn-primary" id="buy7" onclick="decrease(7)">Remove item</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card w-75">
-      <img src="https://m.media-amazon.com/images/I/51pVVSNnV4S._AC_UF1000,1000_QL80_.jpg" style="height:180px;"   class="card-img-top" alt="Please refresh the page again.">
-      <div class="card-body">
-        <h5 class="card-title">Charger</h5>
-        <p class="price">Price: 550</p>
-        <p class="quantity">Quantity: 0</p>
-        <button class="btn btn-primary" onclick="check(8)">Add to cart</button>
-      
-        <button class="btn btn-primary" id="buy8" onclick="decrease(8)">Remove item</button>
-    </div>
-  </div>
-  
-</div>
-
-</div>
-</div>
-<!--third row products-->
-<br>
-<div class="container-fluid d-flex" id="footercss">
-  <div class="container-fluid row mt-3">
-    <div class="col">
-      <h4>Our products</h4>
-      <p>online items</p>
-    </div>
-    <div class="col">
-      <h4>Privacy</h4>
-      <P>Terms&Conditions</P>
-    </div>
-    <div class="col">
-      <h4>Follow us</h4>
-      <p ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-        <a href="https://www.facebook.com/" class="text-decoration-none" style="color:white">facebook</a></p>
-   <p><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        <a href="https://www.whatsapp.com/" class="text-decoration-none" style="color:white">Whatsapp</a></p>
-      <p><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
-        <a href="https://www.instagram.com/" class="text-decoration-none" style="color:white">instagram</a></p>
-      <P><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i>
-        <a href="https://www.pinterest.com/" class="text-decoration-none" style="color:white">pinterest</a></P>
-    </div>
-    <div class="col">
-      <p>
-        <h5 style="color:black">
-          <button type="button" class="btn btn-outline-success-rounded" style="color:white;" data-bs-toggle="modal" data-bs-target="#contact" data-bs-whatever="@user">
-          <i><h4>Contact us</h4></i></button>         
-        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Contact</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </form>
+                   
               </div>
-              <div class="modal-body">
-                <form id="formC">
-                  <div class="mb-3">
-                    <label for="username7" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="username7" name="NName">
-                    <span id="error" class="error"></span>
-                  </div>
-                  <div class="mb-3">
-                    <label for="Email7" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="Email7" name="NEmail">
-                    <span id="error1" class="error"></span>
-                  </div>
-                  <div class="mb-3">
-                    <label for="Textarea">Comments</label>
-                    <textarea class="form-control" placeholder="Leave a comment here" id="Textarea"></textarea>
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button class="btn btn-primary" id="contactSubmit">Submit</button>
-                  </div>
-                </form>
-                  
             </div>
           </div>
+          </div></h5>
+          <h5 style="color:black">
+            <button type="button" class="btn btn-outline-success-rounded" style="color: white;" data-bs-toggle="modal" data-bs-target="#loginfirst" data-bs-whatever="@user">
+            <b>Login</b></button>         
+          <div class="modal fade" id="loginfirst" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="loginForm">
+                    <div class="mb-3">
+                      <label for="loginName" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="loginName" name="name">
+                      <span id="loginError1" class="error"></span>
+                    </div>
+                    <div class="mb-3">
+                      <label for="loginEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="loginEmail" name="email" aria-describedby="emailHelp">
+                      <span id="loginError2" class="error"></span>
+                    </div>
+                    <div class="mb-3">
+                      <label for="loginPassword">Password</label>
+                      <input type="password" class="form-control" id="loginPassword" name="password">
+                      <span id="loginError3" class="error"></span>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-primary" id="loginSubmit">Submit</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          </div></h5> 
         </div>
-        </div></h5>
-      </p>
+    
+      <nav class="navbar navbar-dark bg-dark" id="nav">
+          <div class="container-fluid">
+             <p id="total-quantity"  class=" ms-auto"style="color: red;z-index: 5;">0+</p>
+            <a class="navbar-brand" href="#"> 
+              <i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        
+      </nav>
+      </header>
+<br>
+<div class="container-fluid">
+
+<div class="row row-cols-1 row-cols-md-3 g-4" id="top">
+    <div class="col">
+        <div class="card w-75">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" style="height:180px;"   class="card-img-top" alt="Please refresh your page again.">
+          <div class="card-body">
+            <h5 class="card-title">Headphone</h5>
+            <p class="price">Price: 500</p>
+            <p class="quantity">Quantity: 0</p>
+            <button class="btn btn-primary" onclick="check(0)">Add to cart</button>
+            <button class="btn btn-primary"  id="buy0" onclick="decrease(0)">Remove item</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card w-75">
+          <img src="https://www.oberlo.com/media/1603969900-productphotog-2.jpg?w=1824&fit=max"  style="height:180px;"  class="card-img-top" alt="please refresh the page again.">
+          <div class="card-body">
+            <h5 class="card-title">camera</h5>
+            <p class="price">Price: 980</p>
+            <p class="quantity">Quantity: 0</p>
+            <button class="btn btn-primary" onclick="check(1)">Add to cart</button>
+            <button class="btn btn-primary" id="buy1" onclick="decrease(1)">Remove item</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card w-75">
+          <img src="https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?cs=srgb&dl=pexels-alex-azabache-3766111.jpg&fm=jpg" style="height:180px;"      class="card-img-top" alt="please refresh the page again.">
+          <div class="card-body">
+            <h5 class="card-title">Watch</h5>
+            <p class="price">Price:670</p>
+            <p class="quantity">Quantity: 0</p>
+            <button class="btn btn-primary" onclick="check(2)">Add to cart</button>
+          
+            <button class="btn btn-primary" id="buy2" onclick="decrease(2)">Remove item</button>
+        </div>
+      </div>
+      
     </div>
-    <h4 style="text-align:center;">
-      <a href="#homepage" class="text-decoration-none" style="color:white">Home</a> </h4>
+  <!--second row start-->
+      <div class="col">
+        <div class="card w-75">
+          <img src="https://rukminim1.flixcart.com/image/300/300/kpr8k280/all-purpose-cleaner/9/g/n/hello-sunshine-multipurpose-sanitizing-spray-200ml-pack-of-2-original-imag3x4uzvf44ptu.jpeg" style="height:180px;"    class="card-img-top" alt="please refresh the page again.">
+          <div class="card-body">
+            <h5 class="card-title">Sanitizer</h5>
+            <p class="price">Price:710</p>
+            <p class="quantity">Quantity: 0</p>
+            <button class="btn btn-primary" onclick="check(3)">Add to cart</button>
+            <button class="btn btn-primary"  id="buy3" onclick="decrease(3)">Remove item</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card w-75">
+          <img src="https://m.media-amazon.com/images/I/61+85l5NkML._AC_UF1000,1000_QL80_.jpg" style="height:180px;"   class="card-img-top" alt="please refresh the page again.">
+          <div class="card-body">
+            <h5 class="card-title">Phone case</h5>
+            <p class="price">Price:650</p>
+            <p class="quantity">Quantity: 0</p>
+            <button class="btn btn-primary" onclick="check(4)">Add to cart</button>
+            <button class="btn btn-primary" id="buy4" onclick="decrease(4)">Remove item</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card w-75">
+          <img src="https://m.media-amazon.com/images/I/516EswKjjRL.jpg" style="height:180px;"    class="card-img-top" alt="Please refresh the page again.">
+          <div class="card-body">
+            <h5 class="card-title">Baby powder</h5>
+            <p class="price">Price:550</p>
+            <p class="quantity">Quantity: 0</p>
+            <button class="btn btn-primary" onclick="check(5)">Add to cart</button>
+          
+            <button class="btn btn-primary" id="buy5" onclick="decrease(5)">Remove item</button>
+        </div>
+      </div>
+      
+    </div>
+  <!--second row end-->
+  <!--third row products-->
+  
+    <div class="col">
+      <div class="card w-75">
+        <img src="https://www.bazaart.me/wp-content/uploads/2021/05/create_product_photos_with_white_background_Thumbnail_website_compressed.jpg" style="height:180px;"    class="card-img-top" alt="please refresh the page again.">
+        <div class="card-body">
+          <h5 class="card-title">Bag</h5>
+          <p class="price">Price:450</p>
+          <p class="quantity">Quantity: 0</p>
+          <button class="btn btn-primary" onclick="check(6)">Add to cart</button>
+          <button class="btn btn-primary"  id="buy6" onclick="decrease(6)">Remove item</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card w-75">
+        <img src="https://southindianstore.com/wp-content/uploads/2020/02/07.jpg" style="height:180px;"  class="card-img-top" alt="please refresh the page again.">
+        <div class="card-body">
+          <h5 class="card-title">Oil</h5>
+          <p class="price">Price: 300</p>
+          <p class="quantity">Quantity: 0</p>
+          <button class="btn btn-primary" onclick="check(7)">Add to cart</button>
+          <button class="btn btn-primary" id="buy7" onclick="decrease(7)">Remove item</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card w-75">
+          <img src="https://m.media-amazon.com/images/I/51pVVSNnV4S._AC_UF1000,1000_QL80_.jpg" style="height:180px;"   class="card-img-top" alt="Please refresh the page again.">
+          <div class="card-body">
+            <h5 class="card-title">Charger</h5>
+            <p class="price">Price: 550</p>
+            <p class="quantity">Quantity: 0</p>
+            <button class="btn btn-primary" onclick="check(8)">Add to cart</button>
+          
+            <button class="btn btn-primary" id="buy8" onclick="decrease(8)">Remove item</button>
+        </div>
+      </div>
+      
+    </div>
+ 
+
+ 
+ 
   </div>
 </div>
-<script src="cart.js"></script>
+
+<div class="container-fluid d-flex" id="footercss">
+    <div class="container-fluid row mt-3">
+      <div class="col">
+        <h4>Our products</h4>
+        <p>online items</p>
+      </div>
+      <div class="col">
+        <h4>Privacy</h4>
+        <P>Terms&Conditions</P>
+      </div>
+      <div class="col">
+        <h4>Follow us</h4>
+        <p ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+          <a href="https://www.facebook.com/" class="text-decoration-none" style="color:white">facebook</a></p>
+     <p><i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+          <a href="https://www.whatsapp.com/" class="text-decoration-none" style="color:white">Whatsapp</a></p>
+        <p><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+          <a href="https://www.instagram.com/" class="text-decoration-none" style="color:white">instagram</a></p>
+        <P><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i>
+          <a href="https://www.pinterest.com/" class="text-decoration-none" style="color:white">pinterest</a></P>
+      </div>
+      <div class="col">
+        <p>
+          <h5 style="color:black">
+            <button type="button" class="btn btn-outline-success-rounded" style="color:white;" data-bs-toggle="modal" data-bs-target="#contact" data-bs-whatever="@user">
+            <i><h4>Contact us</h4></i></button>         
+          <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contact</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="formC">
+                    <div class="mb-3">
+                      <label for="username7" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="username7" name="NName">
+                      <span id="error" class="error"></span>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Email7" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="Email7" name="NEmail">
+                      <span id="error1" class="error"></span>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Textarea">Comments</label>
+                      <textarea class="form-control" placeholder="Leave a comment here" id="Textarea"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button class="btn btn-primary" id="contactSubmit">Submit</button>
+                    </div>
+                  </form>
+                    
+              </div>
+            </div>
+          </div>
+          </div></h5>
+        </p>
+      </div>
+      <h4 style="text-align:center;">
+        <a href="#homepage" class="text-decoration-none" style="color:white">Home</a> </h4>
+    </div>
+  </div>
+  <script src="cart.js"></script>
+
+
 </body>
 </html>
