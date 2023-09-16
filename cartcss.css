@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#footercss{
+    background-color:black;
+    color:white;
+    cursor: pointer;
+}
+#nav{
+   position: fixed;
+   left:1230px;
+    z-index:3;
+    border:2px solid white;
+    border-radius: 10px;
+}
+#space{
+    padding:5px;
+    justify-content: flex-end;
+background-color: black;
+z-index: 9;
+}
+
+span.error {
+    color: red;
+  }
+
+
